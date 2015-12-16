@@ -1,0 +1,44 @@
+{{set . "title" "Home"}}
+{{append . "moreStyles" "css/app.css"}}
+{{append . "moreStyles" "css/company.css"}}
+{{template "header.html" .}}
+{{template "nav.html"}}
+
+
+<div class="container company-section">
+<div class="row">
+	<ol class="breadcrumb">
+	  <li><a href="#">关于我们</a></li>
+	  <li><a href="#">公司简介</a></li>
+	</ol>
+</div>
+  <div class="row main-title text-center">
+	<div class="col-md-2"><h1>公司简介</h1></div>
+	
+  </div>
+  <div class="row contact-address">
+  	<div class="col-md-8">
+  		<img src="/public/img/demo-company.png" alt="">
+  	</div>
+  	<div class="col-md-4">
+  		<img src="/public/img/about-company.png" alt="">
+  	</div>
+</div>
+
+</body>
+
+  <script>
+	$(document).ready(function () {
+	    $('.nav li').click(function(e) {
+
+	        $('.nav li').removeClass('active');
+
+	        var $this = $(this);
+	        if (!$this.hasClass('active')) {
+	            $this.addClass('active');
+	        }
+	        //e.preventDefault();
+	    });
+	});
+  </script>
+</html>

@@ -1,0 +1,23 @@
+.main-title h1{
+	color:purple;
+
+}
+/*.arrow-icon{
+	width: 50px;
+}*/
+.main-title{
+	margin-bottom: 50px;
+}
+.company-section img{
+	width: 100%;
+}
+
+.team-section img{
+	width: 100%;
+}
+.carousel-control{
+	background: none !important;
+	padding-top: 25%;
+}
+
+

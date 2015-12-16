@@ -1,23 +1,30 @@
 {{set . "title" "Home"}}
-{{template "header.html" .}}
+{{append . "moreStyles" "css/app.css"}}
 
-<header class="hero-unit" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <div class="hero-text">
-        <h1>It works!</h1>
-        <p></p>
-      </div>
-    </div>
-  </div>
-</header>
+{{template "header.html" .}}
+{{template "nav.html"}}
+
 
 <div class="container">
   <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
-    </div>
+	
   </div>
 </div>
 
-{{template "footer.html" .}}
+</body>
+
+  <script>
+	$(document).ready(function () {
+	    $('.nav li').click(function(e) {
+
+	        $('.nav li').removeClass('active');
+
+	        var $this = $(this);
+	        if (!$this.hasClass('active')) {
+	            $this.addClass('active');
+	        }
+	        //e.preventDefault();
+	    });
+	});
+  </script>
+</html>

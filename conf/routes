@@ -14,3 +14,14 @@ GET     /public/*filepath                       Static.Serve("public")
 
 # Catch all
 *       /:controller/:action                    :controller.:action
+
+GET 	/contact 							   Contact.Index
+
+
+GET 	/about/events 						   About.Events
+
+GET 	/about/company 						   About.Company
+
+Get 	/about/team 							About.Team
+
+Get 	/about/teamslide							About.TeamSlide

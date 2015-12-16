@@ -1,0 +1,33 @@
+{{set . "title" "Home"}}
+{{append . "moreStyles" "css/app.css"}}
+{{append . "moreStyles" "css/events.css"}}
+{{template "header.html" .}}
+{{template "nav.html"}}
+
+
+<div class="container contact-section">
+  <div class="row text-center">
+	<div><h1>新盟国际大事记</h1></div>
+	
+  </div>
+  <div class="row contact-address">
+  	<img src="/public/img/events.png" alt="">
+</div>
+
+</body>
+
+  <script>
+	$(document).ready(function () {
+	    $('.nav li').click(function(e) {
+
+	        $('.nav li').removeClass('active');
+
+	        var $this = $(this);
+	        if (!$this.hasClass('active')) {
+	            $this.addClass('active');
+	        }
+	        //e.preventDefault();
+	    });
+	});
+  </script>
+</html>

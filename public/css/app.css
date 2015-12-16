@@ -1,0 +1,50 @@
+.purple-bar{
+	width: 100%;
+	background-color: purple;
+	height: 10px;
+}
+
+.logo{
+	max-width: 100px;
+	margin:10px 5px;
+}
+
+.breadcrumb a{
+	color:#2A2A2A;
+}
+.breadcrumb{
+	background-color: white;
+}
+.navbar-xinmeng{
+	background-color: rgb(255, 255, 255);
+    border-bottom-color: #800080;
+    border-bottom-style: dashed;
+}
+
+.nav-link span{
+
+}
+
+@media (min-width: 768px){
+	.nav-link span{
+		/*margin-top: 10px;*/
+		/*margin-left: 100px;*/
+		padding:0px 8px;
+	}
+	.nav-link span:hover{
+		border-bottom-color: purple;
+	    border-bottom-style: groove;
+	    padding-bottom: 4px;
+	}
+	.nav-link .active span{
+		border-bottom-color: purple;
+	    border-bottom-style: groove;
+	    padding-bottom: 4px;
+	}
+}
+
+@media (min-width: 768px)and (max-width: 800px){
+	.logo{
+		max-width: 80px
+	}
+}

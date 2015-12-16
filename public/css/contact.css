@@ -1,0 +1,38 @@
+.contact-section h1{
+	color:purple;
+	font-size: 3.5em;
+}
+
+.contact-section .row:nth-child(1){
+	margin-top:50px;
+}
+
+.contact-section .row:nth-child(1) div{
+	margin-top:10px;
+}
+
+.contact-section .row:nth-child(1) button{
+	color:white;
+	background-color: purple;
+	border:none;
+	font-size: 1.2em;
+}
+
+.contact-section .row:nth-child(1) img{
+	width: 100px;
+}
+
+
+.contact-section .contact-address >div:nth-child(2) .row{
+	border-right-color: purple;
+    border-right-style: dotted;
+    border-left-color: purple;
+    border-left-style: dotted;
+}
+
+.contact-section .row:nth-child(2) img{
+	width: 80%;
+}
+.contact-section .row:nth-child(1) .code-img{
+	margin-top: 30px;
+}

@@ -1,0 +1,90 @@
+{{set . "title" "Home"}}
+{{append . "moreStyles" "css/app.css"}}
+{{append . "moreStyles" "css/company.css"}}
+{{template "header.html" .}}
+{{template "nav.html"}}
+
+
+<div class="container team-section">
+<div class="row">
+	<ol class="breadcrumb">
+	  <li><a href="#">关于我们</a></li>
+	  <li><a href="#">核心团队</a></li>
+	</ol>
+</div>
+  <div class="row main-title text-center">
+	<div class="col-md-2"><h1>核心团队</h1></div>
+	
+  </div>
+  <div class="row contact-address">
+  	<!-- <div class="col-md-6">
+  		<img src="/public/img/about-wu.png" alt="">
+  	</div>
+  	<div class="col-md-5">
+  		<img src="/public/img/wu.png" alt="">
+  	</div> -->
+  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="row contact-address">
+        <div class="col-md-6">
+          <img src="/public/img/about-wu.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <img src="/public/img/wu.png" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="item">
+      <div class="row contact-address">
+        <div class="col-md-6">
+          <img src="/public/img/about-wu.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <img src="/public/img/wu.png" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="item">
+      <div class="row contact-address">
+        <div class="col-md-6">
+          <img src="/public/img/about-wu.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <img src="/public/img/wu.png" alt="">
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  
+</div> <!-- Carousel -->
+</div>
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class=""><img class="arrow-icon" style="width:50px;" src="/public/img/arrow-right.png" alt=""></span>
+  </a>
+  <a class="right carousel-control"  href="#carousel-example-generic" role="button" data-slide="next">
+    <span class=""><img class="arrow-icon" style="width:50px;" src="/public/img/arrow-left.png" alt=""></span>
+  </a>
+</body>
+
+  <script>
+	$(document).ready(function () {
+	    $('.nav li').click(function(e) {
+
+	        $('.nav li').removeClass('active');
+
+	        var $this = $(this);
+	        if (!$this.hasClass('active')) {
+	            $this.addClass('active');
+	        }
+	        //e.preventDefault();
+	    });
+	});
+  </script>
+</html>
